@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+
+</html>
+<script>
+    // let goods = [30, 80, 50, 5, 3, 1, 60, 9];
+    // let goods1 = [];
+    // let a = 0;
+    // for (let i = 0; i <= goods.length; i++) {
+    //     if (goods[i] >= 10) {
+    //         goods1.push(goods[i] * 0.5);
+
+    //     }
+    // }
+
+    // for (let n of goods) {
+    //     if (n >= 10)
+    //         goods1.push(n*0.5)
+    // }
+
+    // for (let n of goods1) {
+    //     a += n;
+    // }
+    // console.log(a);
+    // console.log(goods1);
+
+    // //过滤 n >= 10 
+    // let goods = [30, 80, 50, 5, 3, 1, 60, 9];
+    // let goods1 = goods.filter((n) => n >= 10 );
+    // console.log(goods1)
+
+    // //map映射
+    // let goods2 = goods1.map((n)=>n*0.5);
+
+    // //reduce汇总
+    // let sum = goods2.reduce((s,n)=>s+n,0);
+    // // let sum = goods2.reduce(function(s,n) {
+    // //     return s+n
+    // // })
+    // console.log(sum);
+    let goods = [30, 80, 50, 5, 3, 1, 60, 9];
+    let sum = goods.filter(n => n >= 10).map(n=>n*0.5).reduce((s,n)=>s+n);
+    console.log(sum);
+</script>

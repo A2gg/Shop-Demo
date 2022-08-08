@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+
+</html>
+<script>
+    // const fun = x => x * 2;
+    // console.log(fun(10));
+
+    // let arr = [1, 5, 8, 9, 11, 99];
+
+
+    // let narrNot = arr.sort(function (a, b) {
+    //     return a - b;
+    // });
+    //sort排序
+    // let narr = arr.sort((a, b) => a - b);
+
+    // console.log(narrNot);
+    // console.log(narr);
+
+    // const funNot = id => ({ id: id, name: "ak" });
+
+    // const funTwo = function (id) {
+    //     return { id: id, name: "ak" }
+    // }
+
+    // console.log(funNot(01).id);
+    // console.log(funTwo(11).name);
+
+    const obj2 = this;
+    const obj0 = {
+        fun:function(){
+            return console.log(obj2);
+        }
+    }
+
+  
+    const obj = {
+        fun:()=>console.log(this)
+    }
+
+    obj0.fun();
+</script>
